@@ -15,6 +15,7 @@ html, body {
 	#header {
 		padding: 10px;
 		margin-bottom: 20px;
+		border-bottom:2px solid white;
 	}
 
 	#title {
@@ -25,12 +26,6 @@ html, body {
 		color:white;
 	}
 
-/*Content*/
-
-	#content {
-		height:100%;
-	}
-
 /*formulaire*/
 
 #formu {
@@ -38,14 +33,40 @@ html, body {
 	border-radius: 5px;
 	background-color:white;
 	padding:0;
+	margin-top: 10px;
 }
 
 .box {
-	height: 40%;
+	height: 50%;
 	margin:10px;
-	border:2px solid #17a2b8;
+	border:2px solid white;
 	border-radius:5px;
+}
 
+#dragHere {
+	width: 100%;
+	border:0;
+	border-bottom:2px solid #17a2b8;
+	border-top:2px solid #17a2b8;
+	margin:0;
+	border-radius: 0;
+	height: 400px;
+	background-color: #999;
+}
+
+#intDragHere {
+	width: 60%;
+	margin:auto;
+	margin-top: 8%;
+	height: 300px;
+	border:2px dashed #17a2b8;
+}
+
+#paraDrop {
+	text-align:center;
+	color: #17a2b8;
+	font-size: 1.4em;
+	margin-top: 37%;
 }
 
 #titleFormu {
@@ -54,6 +75,7 @@ html, body {
 	border-top-left-radius:5px;
 	border-top-right-radius:5px;
 	padding-left: 10px;
+	padding-bottom:5px;
 	font-size:2em;
 	text-align: center;
 }
@@ -62,7 +84,7 @@ html, body {
 	color:white;
 	font-size:1.5em;
 	text-align: center;
-	margin-top: 40%;
+	margin-top: 30%;
 }
 
 /*outils*/
