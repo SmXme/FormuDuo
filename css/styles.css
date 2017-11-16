@@ -1,0 +1,109 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	font-family: 'Questrial', sans-serif;
+}
+
+#container {
+	height:100%;
+	background-color:#DDD;
+}
+
+#fixColumn {
+	position: fixed;
+	left: 20px;
+	z-index: 2;
+}
+
+#fixColumn2 {
+	position: fixed;
+	right: 20px;
+}
+
+/*header*/
+
+	#header {
+		padding: 10px;
+		margin-bottom: 50px;
+		border-bottom:2px solid white;
+	}
+
+	#title {
+		text-align: center;
+	}
+
+	#testTitle {
+		color:white;
+	}
+
+/*formulaire*/
+
+#formu {
+	border:2px solid #17a2b8;
+	border-radius: 5px;
+	background-color:white;
+	padding:0;
+	margin-top: 10px;
+}
+
+.box {
+	height: 50%;
+	margin:10px;
+	border:2px solid white;
+	border-radius:5px;
+	padding-bottom: 82px;
+}
+
+#dragHere {
+	width: 100%;
+	border:0;
+	border-bottom:2px solid #17a2b8;
+	border-top:2px solid #17a2b8;
+	margin:0;
+	border-radius: 0;
+	height: 400px;
+	background-color: #999;
+}
+
+#intDragHere {
+	width: 60%;
+	margin:auto;
+	margin-top: 8%;
+	height: 300px;
+	border:2px dashed #17a2b8;
+}
+
+#paraDrop {
+	text-align:center;
+	color: #17a2b8;
+	font-size: 1.4em;
+	margin-top: 37%;
+}
+
+#titleFormu {
+	width: 100%;
+	border:0;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	padding-left: 10px;
+	padding-bottom:5px;
+	font-size:2em;
+	text-align: center;
+}
+
+.paragraph {
+	color:white;
+	font-size:1.5em;
+	text-align: center;
+	margin-top: 30%;
+}
+
+/*outils*/
+.styleClone{
+	width :285px;
+}
+.draggable{
+ z-index: 2;
+}

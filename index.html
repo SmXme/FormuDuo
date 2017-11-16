@@ -4,8 +4,75 @@
 	<title>
 		FormuDuo - Accueil
 	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<div class="container-fluid" id="container">
+
+	<div class="row bg-info justify-content-around" id="header">
+		<h1 id="title"><span id="testTitle">Générateur de formulaire</span></h1>
+	</div>
+
+	<div class="row justify-content-around" id="content">
+
+		<div class="col-3" id="fixColumn">
+
+			<div id="boxCheck" class="box bg-info draggable">
+				<form>
+					<p class="paragraph">Question à checkbox</p>	
+				</form>
+			</div>
+
+			<div id="boxSelect" class="box bg-info draggable">
+				<form>
+					<p class="paragraph">Question à liste déroulante</p>
+				</form>
+			</div>
+		</div> 
+
+		<div class="col-5" id="formu">
+			<input type="text" id="titleFormu" placeholder="Titre de votre formulaire">
+			<div class="box" id="dragHere">
+				<div class="box bg-light" id="intDragHere">
+					<p id="paraDrop">Drop your box here !</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="col-3" id="fixColumn2">
+
+			<div id="boxRadio" class="box bg-info draggable">
+				<form>
+					<p class="paragraph">Question à radio</p>
+				</form>
+			</div>
+
+			<div id="boxInfo" class="box bg-info draggable">
+				<form>
+					<p class="paragraph">Question à choix multiple</p>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+ 
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
