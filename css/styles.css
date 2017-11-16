@@ -5,6 +5,30 @@ html, body {
 	padding: 0;
 }
 
-#title {
-	text-align: center;
+#container {
+	height:100%;
+}
+
+/*header*/
+
+	#header {
+		padding: 10px;
+		margin-bottom: 20px;
+	}
+
+	#title {
+		text-align: center;
+	}
+
+/*Content*/
+
+	#content {
+		height:100%;
+	}
+
+/*formulaire*/
+
+.box {
+	height: 40%;
+	margin:10px;
 }
