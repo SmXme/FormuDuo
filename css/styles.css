@@ -44,7 +44,9 @@ html, body {
 }
 
 /*outils*/
-
+.styleClone{
+	width :285px;
+}
 .draggable{
  z-index: 2;
 }
