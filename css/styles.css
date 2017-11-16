@@ -42,3 +42,9 @@ html, body {
 	text-align: center;
 	margin-top: 30%;
 }
+
+/*outils*/
+
+.draggable{
+ z-index: 2;
+}
