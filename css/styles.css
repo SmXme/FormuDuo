@@ -46,7 +46,9 @@ html, body {
 	border-radius: 5px;
 	background-color:white;
 	padding:0;
+	margin-bottom: 40px;
 	margin-top: 10px;
+
 }
 
 .box {
@@ -106,7 +108,8 @@ html, body {
 .dropForm {
 	width: 100%;
 	height: auto;
-	background-color:blue;
+	background-color:white;
+	border-bottom:2px solid #17a2b8;
 }
 
 #dropTitle {
@@ -116,12 +119,21 @@ html, body {
 	margin:auto;
 	margin-bottom:30px;
 	height: 30px;
+	text-align:center;
+	font-size:1.5em;
 }
 
 #formButton{
 	display: block;
 	width: 20%;
 	margin:auto;
+	margin-bottom: 20px;
+}
+
+.answer {
+	border:0;
+	margin:10px;
+	margin-bottom: 20px;
 }
 
 /*outils*/
