@@ -110,8 +110,16 @@ html, body {
 	height: auto;
 	background-color:white;
 	border-bottom:2px solid #17a2b8;
+	position: relative;
 }
-
+.divCrossForm{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color:#17a2b8;
+	z-index: 2;
+	cursor: pointer;
+}
 #dropTitle {
 	border:0;
 	display: block;
