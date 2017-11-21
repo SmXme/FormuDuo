@@ -23,12 +23,7 @@ $( function() {
     $( "#formu" ).droppable({
       drop: function( event, ui ) {
       	if (draginItem == "boxRadio"){
-      		$(this).append("<div class ='dropForm'> <input type='text' id='dropTitle'><input type='radio'><input type='text' class='answer'><button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
-                           
-                            
-                            
-                            
-                          
+      		$(this).append("<div class ='dropForm'><input type='text' id='dropTitle'><input type='radio'><input type='text' class='answer'><button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");                           
       	}
       	if (draginItem == "boxSelect"){
       		$(this).append("<select></select>");	
