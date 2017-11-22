@@ -152,6 +152,7 @@ html, body {
 
 .iconDelete {
 	color:red;
+	cursor: pointer;
 }
 
 .answer {
