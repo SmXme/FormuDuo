@@ -149,11 +149,9 @@ html, body {
 	top:73px;
 }
 
-.buttonEdit {
-	background-color: #17a2b8;
-	padding:0 10px;
-	font-size:0.8em;
-	margin-right: 5px;
+
+.iconDelete {
+	color:red;
 }
 
 .answer {
@@ -168,9 +166,6 @@ html, body {
 	margin-right: 5px;
 }
 
-.iconDelete {
-	color: red;
-}
 
 #divInfo {
 	width: 100%;
