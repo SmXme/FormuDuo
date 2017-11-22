@@ -81,10 +81,9 @@ function initClick(){
   $('#formButtonRadio').off().click(validateRadioQuestion);
   $('#formButtonSelect').off().click(validateSelectQuestion);
   $('#formButtonCheckbox').off().click(validateCheckboxQuestion);
-  $('#formButtonInfo').off().click(validateInfoQuestion);
 }
 
-var html=[];
+var allHtml=[];
 
 function validateRadioQuestion(){
   var q=0;
@@ -97,7 +96,8 @@ function validateRadioQuestion(){
   for (i = 1 ; i < q ; i++){
     monHtml += "<label><input type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
-  $(this).parent().append(monHtml);
+  // $(this).parent().append(monHtml);
+  allHtml.push(monHtml);
 }
 
 function validateSelectQuestion(){
@@ -114,7 +114,8 @@ function validateSelectQuestion(){
     else monHtml += "<option value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
   }
   monHtml += "</select>";
-  $(this).parent().append(monHtml);
+  // $(this).parent().append(monHtml);
+  allHtml.push(monHtml);
 }
 
 function validateCheckboxQuestion(){
@@ -128,7 +129,7 @@ function validateCheckboxQuestion(){
   for (i = 1 ; i < q ; i++){
     monHtml += "<label><input type ='checkbox' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
-  $(this).parent().append(monHtml);
+  // $(this).parent().append(monHtml);
 }
 
 
