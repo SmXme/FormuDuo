@@ -132,7 +132,7 @@ html, body {
 	font-size:1.5em;
 }
 
-#formButton{
+.formButton{
 	display: block;
 	width: 20%;
 	margin:auto;
