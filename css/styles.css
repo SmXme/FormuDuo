@@ -192,6 +192,41 @@ html, body {
 	border-bottom: 1px solid grey;
 }
 
+/*Div contenant les résultats des boxs droppées*/
+
+.radioResult, .checkboxResult, .selectResult {
+	width: 100%;
+	border-bottom:1px solid #17a2b8;
+}
+
+.radioResult h2, .checkboxResult h2, .selectResult h2 {
+	text-align: center;
+	border-bottom:1px solid #17a2b8;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 30px;
+}
+
+.radioLabel, .checkboxLabel {
+	display: block;
+	padding-left: 20px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	font-size: 1.3em;
+}
+
+.inputRadio, .inputCheckbox {
+	margin-right: 10px;
+}
+
+.selectOption {
+	display: block;
+	width:40%;
+	margin:auto;
+	font-size:1.3em;
+	margin-bottom:30px;
+}
+
 /*outils*/
 .styleClone{
 	width :285px;
