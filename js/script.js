@@ -1,4 +1,5 @@
 var draginItem;
+var nextDivId = 1;
 
 $( function() {
     $( ".draggable" ).draggable({
@@ -23,12 +24,13 @@ $( function() {
     $( "#formu" ).droppable({
       drop: function( event, ui ) {
       	if (draginItem == "boxRadio"){
-      		$(this).append("<div class ='dropForm'><div id='idTest' class='divCrossForm'>"+
+      		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
             "<input type='text' id='dropTitle' placeholder='Insérer votre question ici'><input type='radio'>"+
             "<input type='text' class='answer' placeholder='Option'><i class='fa fa-plus-square' aria-hidden='true'></i>"+
             "<i class='fa fa-minus-square' aria-hidden='true'></i>"+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");                           
+            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            nextDivId++;                           
           initClick();  
       	}
       	if (draginItem == "boxSelect"){
