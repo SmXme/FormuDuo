@@ -204,7 +204,7 @@ html, body {
 	border-bottom:1px solid #17a2b8;
 	margin-left: 15%;
 	margin-right: 15%;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .radioLabel, .checkboxLabel {
@@ -215,16 +215,25 @@ html, body {
 	font-size: 1.3em;
 }
 
+.checkboxLabel {
+	line-height: 0;
+}
+
 .inputRadio, .inputCheckbox {
 	margin-right: 10px;
 }
 
-.selectOption {
+.selectOptions {
 	display: block;
 	width:40%;
 	margin:auto;
+	border:1px solid #17a2b8;
 	font-size:1.3em;
 	margin-bottom:30px;
+}
+
+.selectOptions > .selectOption:hover { /*Tentative de hover sur les option du select*/
+	background-color:#17a2b8;
 }
 
 /*outils*/

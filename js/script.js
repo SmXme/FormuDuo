@@ -109,10 +109,10 @@ function validateSelectQuestion(){
     q++;
   });  
   monHtml = "<div class='selectResult'><h2>"+maQuestion[0]+"</h2>";
-  monHtml += "<select class='selectOption'>";
+  monHtml += "<select class='selectOptions'>";
   for (i = 1 ; i < q ; i++){
-    if (i==1) monHtml += "<option value='"+maQuestion[i]+"' selected>"+maQuestion[i]+"</option>";
-    else monHtml += "<option value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
+    if (i==1) monHtml += "<option class='selectOption' value='"+maQuestion[i]+"' selected>"+maQuestion[i]+"</option>"; // Attention à la classe que j'ai mis, ne pas confondre avec la class du select
+    else monHtml += "<option class='selectOption' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
   }
   monHtml += "</select></div>";
   $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
