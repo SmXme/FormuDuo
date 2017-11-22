@@ -73,7 +73,7 @@ function initClick(){
     $(this).parent().remove();
   });
 
-  $('.buttonAdd').click(addOption);
+  $('.buttonAdd').off().click(addOption);
 
   $('.iconDelete').click(removeOption);
 }
