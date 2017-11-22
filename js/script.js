@@ -29,27 +29,27 @@ $( function() {
             "<input type='text' id='dropTitle"+nextDivId+"' class='dropTitle' placeholder='Insérer votre question ici'>"+
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'>"+
             "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div>"+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            "<button id='formButtonRadio' class='formButton btn btn-primary' type='submit'>Valider</button></div>");
             nextDivId++;                           
             initClick();  
       	}
       	if (draginItem == "boxSelect"){
-      		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
+      		$(this).append("<div class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
-            "<input type='text' class='dropTitle' placeholder='Insérer votre question ici'>"+
+            "<input type='text' id='dropTitle"+nextDivId+"' class='dropTitle' placeholder='Insérer votre question ici'>"+
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'>"+
-            "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div> "+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div>"+
+            "<button id='formButtonSelect' class='formButton btn btn-primary' type='submit'>Valider</button></div>");
             nextDivId++;
             initClick();	
       	}
       	if (draginItem == "boxCheck"){
-      		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
+      		$(this).append("<div class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
-            "<input type='text' class='dropTitle' placeholder='Insérer votre question ici'>"+
+            "<input type='text' id='dropTitle"+nextDivId+"' class='dropTitle' placeholder='Insérer votre question ici'>"+
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'>"+
-            "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div> "+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div>"+
+            "<button id='formButtonCheckbox' class='formButton btn btn-primary' type='submit'>Valider</button></div>");
             nextDivId++;
             initClick();	
       	}
@@ -59,7 +59,7 @@ $( function() {
             "<input type='text' placeholder='Nom'>"+
             "<input type='text' placeholder='Prénom'>"+
             "<input type='email' placeholder='Email'>"+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            "<button id='formButtonInfo' class='formButton btn btn-primary' type='submit'>Valider</button></div>");
             nextDivId++;
             initClick();	
       	}
@@ -78,7 +78,7 @@ function initClick(){
 
   $('.buttonAdd').off().click(addOption); 
   $('.iconDelete').click(removeOption);
-  $('#formButton').off().click(validateRadioQuestion);
+  $('#formButtonRadio').off().click(validateRadioQuestion);
 }
 
 var html=[];
@@ -93,7 +93,6 @@ function validateRadioQuestion(){
   for (i = 1 ; i < q ; i++){
     monHtml += "<label><input type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
-  console.log(monHtml);
   $(this).parent().append(monHtml);
 }
 
