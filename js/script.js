@@ -64,4 +64,10 @@ function initClick(){
   $('.divCrossForm').click(function(){
     $(this).parent().remove();
   });
+  $('#iconAdd').click(addOption);
+}
+
+function addOption(){
+  $(this).parent().append("<br><input type='text' class='answer' placeholder='Option'><i id='iconAdd' class='fa fa-plus-square' aria-hidden='true'></i>"+
+            "<i id='iconDelete' class='fa fa-minus-square' aria-hidden='true'></i>");
 }
