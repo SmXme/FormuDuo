@@ -139,7 +139,7 @@ html, body {
 	margin-bottom: 20px;
 }
 
-#buttonAdd {
+.buttonAdd {
 	font-size:0.8em;
 	width:15%;
 	margin:auto;
@@ -161,7 +161,7 @@ html, body {
 	margin-right: 5px;
 }
 
-#iconDelete {
+.iconDelete {
 	color: red;
 }
 
