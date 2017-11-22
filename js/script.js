@@ -20,9 +20,9 @@ $( function() {
     		"ui-draggable-dragging": "styleClone"
   		}
 	});
-
     $( "#formu" ).droppable({
       drop: function( event, ui ) {
+        $('#dragHere').hide();
       	if (draginItem == "boxRadio"){
       		$(this).append("<div class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
@@ -70,7 +70,10 @@ $( function() {
 
 function initClick(){
   $('.divCrossForm').click(function(){
-    $(this).parent().remove();
+    $(this).parent().remove(); 
+      if ($('#formu > .dropForm').length == 0){
+        $('#dragHere').show();
+      }
   });
 
   $('.buttonAdd').off().click(addOption);
