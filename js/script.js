@@ -29,7 +29,7 @@ $( function() {
             "<input type='text' id='dropTitle"+nextDivId+"' class='dropTitle' placeholder='Insérer votre question ici'>"+
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'>"+
             "<button id='buttonAdd"+nextDivId+"' class='buttonAdd btn btn-success' type='submit'>Add option</button></div>"+
-            "<button id='formButton' class='btn btn-primary' onclick='gererRadio();' type='submit'>Valider</button></div>");
+            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
             nextDivId++;                           
             initClick();  
       	}
@@ -76,10 +76,26 @@ function initClick(){
       }
   });
 
-  $('.buttonAdd').off().click(addOption);
-
+  $('.buttonAdd').off().click(addOption); 
   $('.iconDelete').click(removeOption);
+  $('#formButton').off().click(validateThisQuestion);
 }
+
+var html=[];
+var q=0;
+function validateThisQuestion(){
+  var maQuestion=[];
+  $(this).parent().find("input").each(function( index ) {
+    maQuestion.push($( this ).val());
+    q++;
+  });  
+  monHtml = "<h2>"+maQuestion[0]+"</h2>";
+  for (i = 1 ; i < q ; i++){
+    monHtml += "<input type ='radio' value='"+maQuestion[i]+"'>";
+  }
+  console.log(monHtml);
+}
+
 
 function addOption(){
   $(this).parent().append("<div class='divOption'><input type='text' class='answer' placeholder='Option'>"+
