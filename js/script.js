@@ -79,11 +79,13 @@ function initClick(){
   $('.buttonAdd').off().click(addOption); 
   $('.iconDelete').click(removeOption);
   $('#formButtonRadio').off().click(validateRadioQuestion);
+  $('#formButtonSelect').off().click(validateSelectQuestion);
 }
 
 var html=[];
-var q=0;
+
 function validateRadioQuestion(){
+  var q=0;
   var maQuestion=[];
   $(this).parent().find("input").each(function( index ) {
     maQuestion.push($( this ).val());
@@ -95,6 +97,24 @@ function validateRadioQuestion(){
   }
   $(this).parent().append(monHtml);
 }
+
+function validateSelectQuestion(){
+  var q=0;
+  var maQuestion=[];
+  $(this).parent().find("input").each(function( index ) {
+    maQuestion.push($( this ).val());
+    q++;
+  });  
+  monHtml = "<h2>"+maQuestion[0]+"</h2>";
+  monHtml += "<select>";
+  for (i = 1 ; i < q ; i++){
+    if (i==1) monHtml += "<option value='"+maQuestion[i]+"' selected>"+maQuestion[i]+"</option>";
+    else monHtml += "<option value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
+  }
+  monHtml += "</select>";
+  $(this).parent().append(monHtml);
+}
+
 
 
 function addOption(){
