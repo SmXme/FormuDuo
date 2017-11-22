@@ -147,6 +147,7 @@ html, body {
 	position:absolute;
 	right:80px;
 	top:73px;
+	cursor:pointer;
 }
 
 
@@ -161,10 +162,6 @@ html, body {
 	margin-bottom: 20px;
 }
 
-#iconAdd {
-	color: green;
-	margin-right: 5px;
-}
 
 
 #divInfo {
