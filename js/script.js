@@ -24,12 +24,12 @@ $( function() {
     $( "#formu" ).droppable({
       drop: function( event, ui ) {
       	if (draginItem == "boxRadio"){
-      		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
+      		$(this).append("<div class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
-            "<input type='text' id='dropTitle' placeholder='Insérer votre question ici'>"+
+            "<input type='text' id='dropTitle"+nextDivId+"' class='dropTitle' placeholder='Insérer votre question ici'>"+
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'><i id='iconAdd' class='fa fa-plus-square' aria-hidden='true'></i>"+
             "<i id='iconDelete' class='fa fa-minus-square' aria-hidden='true'></i> </div>"+
-            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            "<button id='formButton' class='btn btn-primary' onclick='gererRadio();' type='submit'>Valider</button></div>");
             nextDivId++;                           
           initClick();  
       	}
