@@ -78,12 +78,12 @@ function initClick(){
 
   $('.buttonAdd').off().click(addOption); 
   $('.iconDelete').click(removeOption);
-  $('#formButton').off().click(validateThisQuestion);
+  $('#formButton').off().click(validateRadioQuestion);
 }
 
 var html=[];
 var q=0;
-function validateThisQuestion(){
+function validateRadioQuestion(){
   var maQuestion=[];
   $(this).parent().find("input").each(function( index ) {
     maQuestion.push($( this ).val());
