@@ -92,11 +92,12 @@ function validateRadioQuestion(){
     maQuestion.push($( this ).val());
     q++;
   });  
-  monHtml = "<h2>"+maQuestion[0]+"</h2>";
+  monHtml = "<div class='radioResult'><h2>"+maQuestion[0]+"</h2>";
   for (i = 1 ; i < q ; i++){
-    monHtml += "<label><input type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
+    monHtml += "<label class='radioLabel'><input class='inputRadio' type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label>";
   }
-  // $(this).parent().append(monHtml);
+  monHtml += "</div>";
+  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
 }
 
@@ -107,14 +108,14 @@ function validateSelectQuestion(){
     maQuestion.push($( this ).val());
     q++;
   });  
-  monHtml = "<h2>"+maQuestion[0]+"</h2>";
-  monHtml += "<select>";
+  monHtml = "<div class='selectResult'><h2>"+maQuestion[0]+"</h2>";
+  monHtml += "<select class='selectOption'>";
   for (i = 1 ; i < q ; i++){
     if (i==1) monHtml += "<option value='"+maQuestion[i]+"' selected>"+maQuestion[i]+"</option>";
     else monHtml += "<option value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
   }
-  monHtml += "</select>";
-  // $(this).parent().append(monHtml);
+  monHtml += "</select></div>";
+  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
 }
 
@@ -125,11 +126,13 @@ function validateCheckboxQuestion(){
     maQuestion.push($( this ).val());
     q++;
   });  
-  monHtml = "<h2>"+maQuestion[0]+"</h2>";
+  monHtml = "<div class='checkboxResult'><h2>"+maQuestion[0]+"</h2>";
   for (i = 1 ; i < q ; i++){
-    monHtml += "<label><input type ='checkbox' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
+    monHtml += "<label class='checkboxLabel'><input class='inputCheckbox' type ='checkbox' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
-  // $(this).parent().append(monHtml);
+  monHtml += "</div>"
+  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
+  allHtml.push(monHtml);
 }
 
 
