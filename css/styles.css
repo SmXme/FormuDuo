@@ -139,6 +139,16 @@ html, body {
 	margin-bottom: 20px;
 }
 
+#buttonAdd {
+	font-size:0.8em;
+	width:15%;
+	margin:auto;
+	padding:0;
+	position:absolute;
+	right:80px;
+	top:70px;
+}
+
 .answer {
 	border:0;
 	border-bottom:1px solid grey;
