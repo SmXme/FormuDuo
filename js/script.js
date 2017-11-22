@@ -66,6 +66,10 @@ $( function() {
       	draginItem = "";
       }
     });
+
+    $('#debugcookieHTML').off().click(function(){
+      $('#formu').append(document.cookie);
+    });
 });
 
 function initClick(){
@@ -81,6 +85,7 @@ function initClick(){
   $('#formButtonRadio').off().click(validateRadioQuestion);
   $('#formButtonSelect').off().click(validateSelectQuestion);
   $('#formButtonCheckbox').off().click(validateCheckboxQuestion);
+  
 }
 
 var allHtml=[];
@@ -99,6 +104,7 @@ function validateRadioQuestion(){
   monHtml += "</div>";
   $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
+  document.cookie += monHtml;
 }
 
 function validateSelectQuestion(){
@@ -117,6 +123,7 @@ function validateSelectQuestion(){
   monHtml += "</select></div>";
   $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
+  document.cookie += monHtml;
 }
 
 function validateCheckboxQuestion(){
@@ -133,9 +140,8 @@ function validateCheckboxQuestion(){
   monHtml += "</div>"
   $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
+  document.cookie += monHtml;
 }
-
-
 
 function addOption(){
   $(this).parent().append("<div class='divOption'><input type='text' class='answer' placeholder='Option'>"+
@@ -146,3 +152,4 @@ function removeOption(){
   $(this).parent().remove();
   initClick();
 }
+  
