@@ -26,8 +26,8 @@ $( function() {
       		$(this).append("<div class ='dropForm'><div id='idTest' class='divCrossForm'>"+
             "<i class='fa fa-times' aria-hidden='true'></i></div>"+
             "<input type='text' id='dropTitle' placeholder='Insérer votre question ici'><input type='radio'>"+
-            "<input type='text' class='answer' placeholder='Option'><i class='fa fa-plus-square' aria-hidden='true'></i>"+
-            "<i class='fa fa-minus-square' aria-hidden='true'></i>"+
+            "<input type='text' class='answer' placeholder='Option'><i id='iconAdd' class='fa fa-plus-square' aria-hidden='true'></i>"+
+            "<i id='iconDelete' class='fa fa-minus-square' aria-hidden='true'></i>"+
             "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");                           
           initClick();  
       	}
