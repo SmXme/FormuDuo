@@ -91,9 +91,10 @@ function validateThisQuestion(){
   });  
   monHtml = "<h2>"+maQuestion[0]+"</h2>";
   for (i = 1 ; i < q ; i++){
-    monHtml += "<input type ='radio' value='"+maQuestion[i]+"'>";
+    monHtml += "<label><input type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
   console.log(monHtml);
+  $(this).parent().append(monHtml);
 }
 
 
