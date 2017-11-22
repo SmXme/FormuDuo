@@ -122,7 +122,6 @@ html, body {
 }
 #dropTitle {
 	border:0;
-	/*border-bottom:1px solid grey;*/
 	display: block;
 	width: 80%;
 	margin:auto;
@@ -154,6 +153,14 @@ html, body {
 
 #iconDelete {
 	color: red;
+}
+
+#divInfo {
+	width: 100%;
+	height: auto;
+	background-color:white;
+	border-bottom:2px solid #17a2b8;
+	position: relative;
 }
 
 /*outils*/
