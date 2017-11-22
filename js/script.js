@@ -34,7 +34,14 @@ $( function() {
           initClick();  
       	}
       	if (draginItem == "boxSelect"){
-      		$(this).append("<select></select>");	
+      		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
+            "<i class='fa fa-times' aria-hidden='true'></i></div>"+
+            "<input type='text' class='dropTitle' placeholder='Insérer votre question ici'>"+
+            "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'><i id='iconAdd' class='fa fa-plus-square' aria-hidden='true'></i>"+
+            "<i id='iconDelete' class='fa fa-minus-square' aria-hidden='true'></i></div> "+
+            "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
+            nextDivId++;
+            initClick();	
       	}
       	if (draginItem == "boxCheck"){
       		$(this).append("<div id='divDropForm"+nextDivId+"' class ='dropForm'><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
@@ -43,7 +50,8 @@ $( function() {
             "<div class='option' id='divOptions"+nextDivId+"'><input type='text' class='answer' placeholder='Option'><i id='iconAdd' class='fa fa-plus-square' aria-hidden='true'></i>"+
             "<i id='iconDelete' class='fa fa-minus-square' aria-hidden='true'></i></div> "+
             "<button id='formButton' class='btn btn-primary' type='submit'>Valider</button></div>");
-            nextDivId++;	
+            nextDivId++;
+            initClick();	
       	}
       	if (draginItem == "boxInfo"){
       		$(this).append("<div id='divInfo'><h2>Informations personnelles</h2><div id='idTest"+nextDivId+"' class='divCrossForm'>"+
