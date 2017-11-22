@@ -146,7 +146,14 @@ html, body {
 	padding:0;
 	position:absolute;
 	right:80px;
-	top:70px;
+	top:73px;
+}
+
+.buttonEdit {
+	background-color: #17a2b8;
+	padding:0 10px;
+	font-size:0.8em;
+	margin-right: 5px;
 }
 
 .answer {
@@ -198,4 +205,5 @@ html, body {
 }
 .draggable{
  z-index: 2;
+ cursor: move;
 }
