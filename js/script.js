@@ -80,6 +80,8 @@ function initClick(){
   $('.iconDelete').click(removeOption);
   $('#formButtonRadio').off().click(validateRadioQuestion);
   $('#formButtonSelect').off().click(validateSelectQuestion);
+  $('#formButtonCheckbox').off().click(validateCheckboxQuestion);
+  $('#formButtonInfo').off().click(validateInfoQuestion);
 }
 
 var html=[];
@@ -112,6 +114,20 @@ function validateSelectQuestion(){
     else monHtml += "<option value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
   }
   monHtml += "</select>";
+  $(this).parent().append(monHtml);
+}
+
+function validateCheckboxQuestion(){
+  var q=0;
+  var maQuestion=[];
+  $(this).parent().find("input").each(function( index ) {
+    maQuestion.push($( this ).val());
+    q++;
+  });  
+  monHtml = "<h2>"+maQuestion[0]+"</h2>";
+  for (i = 1 ; i < q ; i++){
+    monHtml += "<label><input type ='checkbox' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
+  }
   $(this).parent().append(monHtml);
 }
 
