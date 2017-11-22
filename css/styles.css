@@ -114,7 +114,7 @@ html, body {
 }
 .divCrossForm{
 	position: absolute;
-	top: 10px;
+	top:0;
 	right: 10px;
 	color:#17a2b8;
 	z-index: 2;
@@ -122,11 +122,12 @@ html, body {
 }
 #dropTitle {
 	border:0;
-	border-bottom:1px solid grey;
+	/*border-bottom:1px solid grey;*/
 	display: block;
 	width: 80%;
 	margin:auto;
 	margin-bottom:30px;
+	margin-top: 10px;
 	height: 30px;
 	text-align:center;
 	font-size:1.5em;
