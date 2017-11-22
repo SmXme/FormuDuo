@@ -122,6 +122,7 @@ html, body {
 }
 #dropTitle {
 	border:0;
+	border-bottom:1px solid grey;
 	display: block;
 	width: 80%;
 	margin:auto;
@@ -140,8 +141,18 @@ html, body {
 
 .answer {
 	border:0;
+	border-bottom:1px solid grey;
 	margin:10px;
 	margin-bottom: 20px;
+}
+
+#iconAdd {
+	color: green;
+	margin-right: 5px;
+}
+
+#iconDelete {
+	color: red;
 }
 
 /*outils*/
