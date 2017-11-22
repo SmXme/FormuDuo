@@ -4,6 +4,7 @@ html, body {
 	margin:0;
 	padding: 0;
 	font-family: 'Questrial', sans-serif;
+	background-color:#DDD;
 }
 
 #container {
@@ -45,7 +46,9 @@ html, body {
 	border-radius: 5px;
 	background-color:white;
 	padding:0;
+	margin-bottom: 40px;
 	margin-top: 10px;
+
 }
 
 .box {
@@ -100,10 +103,100 @@ html, body {
 	margin-top: 30%;
 }
 
+
+/*class des éléments drop*/
+.dropForm {
+	width: 100%;
+	height: auto;
+	background-color:white;
+	border-bottom:2px solid #17a2b8;
+	position: relative;
+}
+.divCrossForm{
+	position: absolute;
+	top:0;
+	right: 10px;
+	color:#17a2b8;
+	z-index: 2;
+	cursor: pointer;
+}
+.dropTitle {
+	border:0;
+	display: block;
+	width: 80%;
+	margin:auto;
+	margin-bottom:30px;
+	margin-top: 10px;
+	height: 30px;
+	text-align:center;
+	font-size:1.5em;
+}
+
+.formButton{
+	display: block;
+	width: 20%;
+	margin:auto;
+	margin-bottom: 20px;
+}
+
+.buttonAdd {
+	font-size:0.8em;
+	width:15%;
+	margin:auto;
+	padding:0;
+	position:absolute;
+	right:80px;
+	top:73px;
+	cursor:pointer;
+}
+
+
+.iconDelete {
+	color:red;
+	cursor: pointer;
+}
+
+.answer {
+	border:0;
+	border-bottom:1px solid grey;
+	margin:10px;
+	margin-bottom: 20px;
+}
+
+
+
+#divInfo {
+	width: 100%;
+	height: auto;
+	background-color:white;
+	border-bottom:2px solid #17a2b8;
+	position: relative;
+}
+
+#divInfo h2{
+	width: 70%;
+	margin:auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 1.3em;
+	color:#888;
+}
+
+#divInfo input{
+	display: block;
+	width: 50%;
+	margin:auto;
+	margin-bottom: 10px;
+	border:0;
+	border-bottom: 1px solid grey;
+}
+
 /*outils*/
 .styleClone{
 	width :285px;
 }
 .draggable{
  z-index: 2;
+ cursor: move;
 }
