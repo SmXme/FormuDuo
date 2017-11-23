@@ -67,9 +67,7 @@ $( function() {
       }
     });
 
-    $('#debugcookieHTML').off().click(function(){
-      $('#formu').append(document.cookie);
-    });
+    $("#debugcookieHTML").off().click(generateTheCookie);
 });
 
 function initClick(){
@@ -90,6 +88,13 @@ function initClick(){
 
 var allHtml=[];
 
+function generateTheCookie(){
+  var monCookie="";
+  monCookie += "<h1>"+$('#titleFormu').val()+"</h1>";
+  monCookie += allHtml;
+  document.cookie=monCookie;
+}
+
 function validateRadioQuestion(){
   var q=0;
   var maQuestion=[];
@@ -102,9 +107,7 @@ function validateRadioQuestion(){
     monHtml += "<label class='radioLabel'><input class='inputRadio' type ='radio' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label>";
   }
   monHtml += "</div>";
-  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
-  document.cookie += monHtml;
 }
 
 function validateSelectQuestion(){
@@ -121,9 +124,7 @@ function validateSelectQuestion(){
     else monHtml += "<option class='selectOption' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</option>";
   }
   monHtml += "</select></div>";
-  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
-  document.cookie += monHtml;
 }
 
 function validateCheckboxQuestion(){
@@ -138,9 +139,7 @@ function validateCheckboxQuestion(){
     monHtml += "<label class='checkboxLabel'><input class='inputCheckbox' type ='checkbox' name='"+maQuestion[0]+"' value='"+maQuestion[i]+"'>"+maQuestion[i]+"</label><br>";
   }
   monHtml += "</div>"
-  $(this).parent().append(monHtml); // A commenter ou supprimer, utile uniquement pour le css des éléments
   allHtml.push(monHtml);
-  document.cookie += monHtml;
 }
 
 function addOption(){
