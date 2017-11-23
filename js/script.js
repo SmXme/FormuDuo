@@ -90,7 +90,7 @@ var allHtml=[];
 
 function generateTheCookie(){
   var monCookie="";
-  monCookie += "<h1 class='text-center'>"+$('#titleFormu').val()+"</h1>";
+  monCookie += "<div id='divTitleForm'><h1 class='text-center'>"+$('#titleFormu').val()+"</h1></div>";
   monCookie += allHtml;
   document.cookie=monCookie;
 }
