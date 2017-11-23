@@ -260,6 +260,7 @@ html, body {
 	background-color: white;
 	padding: 0;
 	margin-top: 80px;
+	box-shadow: 0 0 20px black;
 }
 #divTitleForm {
 	width: 100%;
