@@ -29,6 +29,7 @@ html, body {
 		padding: 10px;
 		margin-bottom: 50px;
 		border-bottom:2px solid white;
+		position: relative;
 	}
 
 	#title {
@@ -38,7 +39,20 @@ html, body {
 	#testTitle {
 		color:white;
 	}
-
+	#debugcookieHTML{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		border: 1px solid white;
+		background-color: #17a2b8; 
+		color: white;
+	}
+	#debugcookieHTML:hover{
+		border: 1px solid #17a2b8;
+		background-color: white; 
+		color: #17a2b8;
+		cursor: pointer;
+	}
 /*formulaire*/
 
 #formu {
