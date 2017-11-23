@@ -4,12 +4,12 @@ html, body {
 	margin:0;
 	padding: 0;
 	font-family: 'Questrial', sans-serif;
-	background-color:#DDD;
+	background-color:#BBB;
 }
 
 #container {
 	height:100%;
-	background-color:#DDD;
+	background-color:#BBB;
 }
 
 #fixColumn {
@@ -211,7 +211,7 @@ html, body {
 .radioResult, .checkboxResult, .selectResult {
 	width: 100%;
 	border-bottom:1px solid #17a2b8;
-}
+	}
 
 .radioResult h2, .checkboxResult h2, .selectResult h2 {
 	text-align: center;
@@ -252,12 +252,32 @@ html, body {
 }
 
 /*Formulaire généré*/
+
 #formContainer{
+	margin:auto;
 	border:2px solid #17a2b8;
 	border-radius: 5px;
 	background-color: white;
 	padding: 0;
+	margin-top: 80px;
 }
+#divTitleForm {
+	width: 100%;
+	background-color:#17a2b8; 
+	color: white;
+	font-size: 1.2em;
+}
+
+#validateFormButton{
+	width: 20%;
+	margin-left:40%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	background-color: #17a2b8;
+	color: white;
+	font-size: 1.2em;
+}
+
 /*outils*/
 .styleClone{
 	width :285px;
